@@ -1,0 +1,123 @@
+.cover {
+  background: center url(./img/bg.jpeg);
+  background-size: cover;
+}
+
+.cover h1 {
+  font-family: 'Alice', serif;
+}
+
+.cover h2 {
+  font-family: 'Alice', serif;
+}
+
+.btn {
+  font-family: 'Alice', serif;
+}
+
+.service-icon {
+background-color: cornsilk;
+color: #1d809f;
+height: 7rem;
+width: 7rem;
+display: block;
+line-height: 7.5rem;
+font-size: 2.25rem;
+-webkit-box-shadow: 0 3px 3px 0 rgba(0, 0, 0, .1);
+box-shadow: 0 3px 3px 0 rgba(0, 0, 0, .1);
+}
+
+footer.footer .social-link {
+display: block;
+height: 4rem;
+width: 4rem;
+line-height: 4.3rem;
+font-size: 1.5rem;
+background-color: #1d809f;
+-webkit-transition: background-color .15s ease-in-out;
+transition: background-color .15s ease-in-out;
+-webkit-box-shadow: 0 3px 3px 0 rgba(0, 0, 0, .1);
+box-shadow: 0 3px 3px 0 rgba(0, 0, 0, .1);
+}
+
+.scroll-to-top {
+position: fixed;
+right: 15px;
+bottom: 15px;
+width: 50px;
+height: 50px;
+text-align: center;
+color: #fff;
+background: rgba(52, 58, 64, .5);
+line-height: 45px;
+}
+
+.portfolio-item {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  max-width: 250px;
+  max-height: 500px;
+  margin: auto auto 1rem
+}
+
+.portfolio-item .caption {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(33, 37, 41, .2);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  z-index: 1
+}
+
+.portfolio-item .caption .caption-content {
+  color: #fff;
+  margin: auto 2rem 2rem
+}
+
+.portfolio-item .caption .caption-content h2 {
+  font-size: .8rem;
+  text-transform: uppercase
+}
+
+.portfolio-item .caption .caption-content p {
+  font-weight: 300;
+  font-size: 1.2rem
+}
+
+@media (min-width:992px) {
+  .portfolio-item {
+    max-width: none;
+    margin: 0
+  }
+  .portfolio-item .caption {
+    -webkit-transition: -webkit-clip-path .25s ease-out, background-color .7s;
+    -webkit-clip-path: inset(0);
+    clip-path: inset(0)
+  }
+  .portfolio-item .caption .caption-content {
+    -webkit-transition: opacity .25s;
+    transition: opacity .25s;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    margin-bottom: 5rem
+  }
+  .portfolio-item img {
+    -webkit-transition: -webkit-clip-path .25s ease-out;
+    -webkit-clip-path: inset(-1px);
+    clip-path: inset(-1px);
+    height: 100%;
+    width: 100%;
+  }
+  .portfolio-item:hover img {
+    -webkit-clip-path: inset(2rem);
+    clip-path: inset(2rem)
+  }
+  .portfolio-item:hover .caption {
+    background-color: rgba(29, 128, 159, .9);
+    -webkit-clip-path: inset(2rem);
+    clip-path: inset(0.1rem)/* def:2rem; */
+  }
+}
